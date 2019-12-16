@@ -41,8 +41,8 @@ class Rover:
             "R": self._right,
         }
 
-        def __repr__(self):
-            return "<Rover id={}>".format(id(self))
+    def __repr__(self):
+        return "<Rover id={}>".format(id(self))
 
     def command(self, command):
         if command not in self._commands:
